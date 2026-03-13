@@ -1,7 +1,4 @@
 # 4640-ansible-roles-lab
 
-
-
-## Getting started
-
-See D2L for lab instructions.
+## Absible Commands
+`ansible-playbook playbook.yml` - runs the playbook 
