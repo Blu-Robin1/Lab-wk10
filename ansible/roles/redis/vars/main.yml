@@ -1,5 +1,1 @@
-  - name: Install redis on Rocky Linux
-    ansible.builtin.dnf:
-      name: redis
-      state: present
-
+ansible_user: "{{ 'rocky' if 'server_role_redis_server' in group_names else 'admin' }}"
