@@ -10,11 +10,3 @@
   roles:
     - redis
     - frontend
-
-  tasks:
-
-  handlers:
-    - name: Reload nginx
-      ansible.builtin.service:
-        name: nginx
-        state: reloaded
