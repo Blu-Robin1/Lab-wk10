@@ -6,7 +6,7 @@
   become: true
   gather_facts: yes # Collect facts only once for the entire play
 
-
-  roles:
-    - redis
-    - frontend
+  ansible_user: "rocky"
+    roles: redis
+  ansible_user: "admin"
+    roles: frontend

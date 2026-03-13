@@ -1,6 +1,6 @@
   - name: Install redis on Rocky Linux
     ansible.builtin.package:
       name: redis
-      state: latest
-      use: dnf
+      update_cache: yes
+      state: present
 
